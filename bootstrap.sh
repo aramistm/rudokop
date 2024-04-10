@@ -3,8 +3,8 @@ apt update -y
 apt install screen -y
 cd ~
 
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.86/lolMiner_v1.86_Lin64.tar.gz
-wget https://github.com/rigelminer/rigel/releases/download/1.15.1/rigel-1.15.1-linux.tar.gz
+wget http://178.208.78.132/lolMiner_v1.86_Lin64.tar.gz
+wget http://178.208.78.132/rigel-1.15.1-linux.tar.gz
 tar -xzvf lolMiner_v1.86_Lin64.tar.gz
 tar -xzvf rigel-1.15.1-linux.tar.gz
 
