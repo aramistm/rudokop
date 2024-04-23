@@ -1,6 +1,6 @@
 #!/bin/sh
 apt update -y
-apt install screen -y
+apt install screen nano -y
 cd ~
 
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
