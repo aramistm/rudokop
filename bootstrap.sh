@@ -32,7 +32,7 @@ echo "#/root/rigel-1.16.3-linux/rigel -a fishhash+sha256ton+zil -o [1]stratum+tc
 echo "#/root/rigel-1.16.3-linux/rigel -a fishhash+pyrinhash+zil -o [1]stratum+tcp://de.ironfish.herominers.com:1145 -u [1]c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458 -o [2]stratum+tcp://de.pyrin.herominers.com:1177 -u [2]pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
 
 echo "#xelis" >> /root/mine.sh
-echo "/root/onezerominer/onezerominer -a xelis -w KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn.$1 -o eu.xel.k1pool.com:9350 --a2 zil --w2 KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn.$1 --p2 x --o2 eu.zil.k1pool.com:1111" >> /root/mine.sh
+echo "/root/onezerominer/onezerominer -a xelis -w KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn.$1 -o eu.xelsolo.k1pool.com:9353 --a2 zil --w2 KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn.$1 --p2 x --o2 eu.zil.k1pool.com:1111" >> /root/mine.sh
 
 echo "#Qubic" >> /root/mine.sh
 echo "#screen -dmS qubic ./qli-Client" >> /root/mine.sh
