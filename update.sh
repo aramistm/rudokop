@@ -10,7 +10,7 @@ tar -zxf rigel-1.17.2-linux.tar.gz
 screen -S mining -X quit
 
 # Заменяем версию в скрипте mine.sh
-sed -i 's/rigel-1.17.0/rigel-1.17.2/g' mine.sh
+sed -i 's/rigel-1.17.1/rigel-1.17.2/g' mine.sh
 
 # Запускаем скрипт mine.sh в новом screen с именем "mining"
 screen -dmS mining bash /root/mine.sh
