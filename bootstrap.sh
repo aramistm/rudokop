@@ -43,3 +43,6 @@ echo "[program:mining]" >> /etc/supervisor/conf.d/supervisord.conf
 echo "command=/bin/bash -c 'screen -dmS mining bash /root/mine.sh $1 && sleep infinity'" >> /etc/supervisor/conf.d/supervisord.conf
 
 screen -dmS mining bash /root/mine.sh $1
+
+echo "alias m='screen -r mining'" >> ~/.bashrc
+
