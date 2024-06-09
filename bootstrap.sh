@@ -45,7 +45,7 @@ echo "command=/bin/bash -c 'screen -dmS mining bash /root/mine.sh $1 && sleep in
 
 screen -dmS mining bash /root/mine.sh $1
 
-screen -dmS mining mon /root/mon.sh
+screen -dmS mon bash /root/mon.sh
 
 echo "alias m='screen -r mining'" >> ~/.bashrc
 
