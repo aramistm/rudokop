@@ -39,7 +39,7 @@ echo "#screen -dmS qubic ./qli-Client" >> /root/mine.sh
 echo "#screen -dmS qubic-cpu bash -c 'cd /root/qcpu && ./qli-Client'" >> /root/mine.sh
 
 echo "#Monitoring" >> /root/mine.sh
-echo "#screen -dmS mon bash /root/mon.sh" >> /root/mine.sh
+echo "screen -dmS mon bash /root/mon.sh" >> /root/mine.sh
 
 echo "" >> /etc/supervisor/conf.d/supervisord.conf
 echo "[program:mining]" >> /etc/supervisor/conf.d/supervisord.conf
