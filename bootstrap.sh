@@ -7,13 +7,13 @@ cd ~
 wget http://178.208.78.132/qli-Client-1.9.7-Linux-x64.tar.gz
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
 wget http://178.208.78.132/rigel-1.18.1-linux.tar.gz
-wget http://178.208.78.132/apoolminer_linux_v1.6.2.tar
+wget http://178.208.78.132/apoolminer_linux_v1.6.14.tar
 wget http://178.208.78.132/mon.sh -O mon.sh
 
 chmod +x /root/mon.sh
 
 tar -xzvf qli-Client-1.9.7-Linux-x64.tar.gz
-tar -xzvf apoolminer_linux_v1.6.2.tar
+tar -xzvf apoolminer_linux_v1.6.14.tar
 tar -xzvf lolMiner_v1.88_Lin64.tar.gz
 tar -xzvf rigel-1.18.1-linux.tar.gz
 
@@ -53,5 +53,6 @@ echo "command=/bin/bash -c 'screen -dmS mining bash /root/mine.sh $1 && sleep in
 screen -dmS mining bash /root/mine.sh $1
 
 echo "alias m='screen -r mining'" >> ~/.bashrc
+echo "alias c='screen -r mining-cpu'" >> ~/.bashrc
 echo "alias s='screen -dmS mining bash /root/mine.sh'" >> ~/.bashrc
 
