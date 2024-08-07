@@ -38,9 +38,9 @@ echo "#/root/rigel-1.18.1-linux/rigel -a fishhash+pyrinhash+zil -o [1]stratum+tc
 echo "#xelis" >> /root/mine.sh
 echo "#/root/rigel-1.18.1-linux/rigel -a xelishashv2+zil -o [1]stratum+ssl://de.xelis.herominers.com:1225 -u [1]xel:qcd39a5u8cscztamjuyr7hdj6hh2wh9nrmhp86ljx2sz6t99ndjqzqq9qqqqq9x07lx8x7f2c57 -o [2]stratum+tcp://eu.zil.k1pool.com:1111 -u [2]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn --zil-countdown -w $1 --api-bind 127.0.0.1:5000" >> /root/mine.sh
 echo "#Qubic" >> /root/mine.sh
-echo "#./apoolminer --account CP_rj3oka7lo3 --cpu-off --pool qubic1.hk.apool.io:3334 --worker $1" >> /root/mine.sh
+echo "./apoolminer --account CP_rj3oka7lo3 --cpu-off --pool qubic1.hk.apool.io:3334 --worker $1" >> /root/mine.sh
 echo "#screen -dmS mining-cpu bash -c 'cd /root/qcpu && ./qli-Client'" >> /root/mine.sh
-echo "/root/qli-Client" >> /root/mine.sh
+echo "#/root/qli-Client" >> /root/mine.sh
 echo "#Octopus" >> /root/mine.sh
 echo "#/root/rigel-1.18.1-linux/rigel -a octopus+pyrinhash+zil -o [1]stratum+tcp://de.conflux.herominers.com:1170 -u [1]cfx:aajg4ygzhz88k47cwfg0cjzhu27v5sgp56510jfnyy -o [2]stratum+tcp://de.pyrin.herominers.com:1177 -u [2]pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
 
