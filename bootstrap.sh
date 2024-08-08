@@ -7,13 +7,13 @@ cd ~
 wget http://178.208.78.132/qli-Client-1.9.7-Linux-x64.tar.gz
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
 wget http://178.208.78.132/rigel-1.18.1-linux.tar.gz
-wget http://178.208.78.132/apoolminer_linux_v1.7.0.tar
+wget http://178.208.78.132/apoolminer_linux_v1.7.1.tar
 wget http://178.208.78.132/mon.sh -O mon.sh
 
 chmod +x /root/mon.sh
 
 tar -xzvf qli-Client-1.9.7-Linux-x64.tar.gz
-tar -xzvf apoolminer_linux_v1.7.0.tar
+tar -xzvf apoolminer_linux_v1.7.1.tar
 tar -xzvf lolMiner_v1.88_Lin64.tar.gz
 tar -xzvf rigel-1.18.1-linux.tar.gz
 
@@ -38,7 +38,7 @@ echo "#/root/rigel-1.18.1-linux/rigel -a fishhash+pyrinhash+zil -o [1]stratum+tc
 echo "#xelis" >> /root/mine.sh
 echo "#/root/rigel-1.18.1-linux/rigel -a xelishashv2+zil -o [1]stratum+ssl://de.xelis.herominers.com:1225 -u [1]xel:qcd39a5u8cscztamjuyr7hdj6hh2wh9nrmhp86ljx2sz6t99ndjqzqq9qqqqq9x07lx8x7f2c57 -o [2]stratum+tcp://eu.zil.k1pool.com:1111 -u [2]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn --zil-countdown -w $1 --api-bind 127.0.0.1:5000" >> /root/mine.sh
 echo "#Qubic" >> /root/mine.sh
-echo "./apoolminer --account CP_rj3oka7lo3 --cpu-off --pool qubic1.hk.apool.io:3334 --worker $1" >> /root/mine.sh
+echo "./apoolminer --account CP_rj3oka7lo3 --cpu-off --pool qubic1.hk.apool.io:3334 --mode 1 --worker $1" >> /root/mine.sh
 echo "#screen -dmS mining-cpu bash -c 'cd /root/qcpu && ./qli-Client'" >> /root/mine.sh
 echo "#/root/qli-Client" >> /root/mine.sh
 echo "#Octopus" >> /root/mine.sh
