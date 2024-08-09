@@ -7,13 +7,13 @@ cd ~
 wget http://178.208.78.132/qli-Client-1.9.7-Linux-x64.tar.gz
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
 wget http://178.208.78.132/rigel-1.18.1-linux.tar.gz
-wget http://178.208.78.132/apoolminer_linux_v1.7.1.tar
+wget http://178.208.78.132/apoolminer_linux_v1.7.2.tar
 wget http://178.208.78.132/mon.sh -O mon.sh
 
 chmod +x /root/mon.sh
 
 tar -xzvf qli-Client-1.9.7-Linux-x64.tar.gz
-tar -xzvf apoolminer_linux_v1.7.1.tar
+tar -xzvf apoolminer_linux_v1.7.2.tar
 tar -xzvf lolMiner_v1.88_Lin64.tar.gz
 tar -xzvf rigel-1.18.1-linux.tar.gz
 
