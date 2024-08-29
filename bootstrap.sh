@@ -4,25 +4,25 @@ apt update -y
 apt install -y g++-11 screen nano libc6 htop curl jq
 cd ~
 
-wget http://178.208.78.132/qli-Client-2.0.8-Linux-x64.tar.gz
+wget http://178.208.78.132/qli-Client-2.1.1-Linux-x64.tar.gz
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
 wget http://178.208.78.132/rigel-1.18.1-linux.tar.gz
-wget http://178.208.78.132/apoolminer_linux_v1.9.1.tar
+wget http://178.208.78.132/apoolminer_linux_v1.9.3.tar
 wget http://178.208.78.132/mon.sh -O mon.sh
 
 chmod +x /root/mon.sh
 
-tar -xzvf qli-Client-2.0.8-Linux-x64.tar.gz
-tar -xzvf apoolminer_linux_v1.9.1.tar
+tar -xzvf qli-Client-2.1.1-Linux-x64.tar.gz
+tar -xzvf apoolminer_linux_v1.9.3.tar
 tar -xzvf lolMiner_v1.88_Lin64.tar.gz
 tar -xzvf rigel-1.18.1-linux.tar.gz
 
 mkdir qcpu
 cp qli-Client /root/qcpu/
 
-echo "{\"Settings\":{\"baseUrl\": \"https://mine.qubic.li/\",\"amountOfThreads\": 54,\"alias\": \"$1\",\"accessToken\": \"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyMjAxNjI0MCwiZXhwIjoxNzUzNTUyMjQwLCJpYXQiOjE3MjIwMTYyNDAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.MFfTXekVh4xbXMa3OguffZWmojObZtwI3CG7nGK_4d6tvAQOd9EmWogkUnVjcsz6CxfuczZ0fJtBfyFlUWnKbQ\", \"autoupdateEnabled\": true, \"trainer\": { \"gpu\": true, \"gpuVersion\": \"CUDA12\" }}}" > appsettings.json
+echo "{\"Settings\":{\"baseUrl\": \"https://mine.qubic.li/\",\"amountOfThreads\": 54,\"alias\": \"$1\",\"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNDMzMjgyMCwiZXhwIjoxNzU1ODY4ODIwLCJpYXQiOjE3MjQzMzI4MjAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.eu8nMWTWVJfywr45W46bHbMABpFakTPRgmjQUezTIlIH8SEvyRKf_9IQv_P9TQPtZsyUJOvIL1L23gCXvTiI87V_XNEamFY1_HqftkRVkjuPKgjPlVcmk1u4ChUAJp-tIMvsuTJ9QBj7MA2VAv0rfpXSWHNolXPQiwEV-8uWIMmQNhgLEWMYbhz0tVVd1-fqHg3UK4vCtkC7RFoIoD3nuU5Ey9LABp7wJZOxcEMe21JwtEPyW0Q9lzQBtcYhumV2EjFankYIjoBOeDMtI-8u-xx7ywA2OVHEVUkPGhAp_3tTRMy1G-VXMDJsESOxhVil9TkY7i1KpH_ePSCNBhOH-Q\", \"autoupdateEnabled\": true, \"trainer\": { \"gpu\": true, \"gpuVersion\": \"CUDA12\" }}}" > appsettings.json
 
-echo "{\"Settings\":{\"baseUrl\": \"https://mine.qubic.li/\",\"amountOfThreads\": 24,\"alias\": \"$1_CPU\",\"accessToken\": \"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyMjAxNjI0MCwiZXhwIjoxNzUzNTUyMjQwLCJpYXQiOjE3MjIwMTYyNDAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.MFfTXekVh4xbXMa3OguffZWmojObZtwI3CG7nGK_4d6tvAQOd9EmWogkUnVjcsz6CxfuczZ0fJtBfyFlUWnKbQ\", \"autoupdateEnabled\": true}}" > /root/qcpu/appsettings.json
+echo "{\"Settings\":{\"baseUrl\": \"https://mine.qubic.li/\",\"amountOfThreads\": 24,\"alias\": \"$1_CPU\",\"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNDMzMjgyMCwiZXhwIjoxNzU1ODY4ODIwLCJpYXQiOjE3MjQzMzI4MjAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.eu8nMWTWVJfywr45W46bHbMABpFakTPRgmjQUezTIlIH8SEvyRKf_9IQv_P9TQPtZsyUJOvIL1L23gCXvTiI87V_XNEamFY1_HqftkRVkjuPKgjPlVcmk1u4ChUAJp-tIMvsuTJ9QBj7MA2VAv0rfpXSWHNolXPQiwEV-8uWIMmQNhgLEWMYbhz0tVVd1-fqHg3UK4vCtkC7RFoIoD3nuU5Ey9LABp7wJZOxcEMe21JwtEPyW0Q9lzQBtcYhumV2EjFankYIjoBOeDMtI-8u-xx7ywA2OVHEVUkPGhAp_3tTRMy1G-VXMDJsESOxhVil9TkY7i1KpH_ePSCNBhOH-Q\", \"autoupdateEnabled\": true}}" > /root/qcpu/appsettings.json
 
 
 echo "#Monitoring" >> /root/mine.sh
