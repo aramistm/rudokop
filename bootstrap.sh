@@ -4,18 +4,18 @@ apt update -y
 apt install -y g++-11 screen nano libc6 htop curl jq
 cd ~
 
-wget http://178.208.78.132/qli-Client-2.1.1-Linux-x64.tar.gz
+wget https://dl.qubic.li/downloads/qli-Client-2.2.1-Linux-x64.tar.gz
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
-wget http://178.208.78.132/rigel-1.18.1-linux.tar.gz
-wget http://178.208.78.132/apoolminer_linux_v1.9.3.tar
+wget https://github.com/rigelminer/rigel/releases/download/1.19.0/rigel-1.19.0-linux.tar.gz
+wget https://github.com/apool-io/apoolminer/releases/download/v2.1.1/apoolminer_linux_v2.1.1.tar
 wget http://178.208.78.132/mon.sh -O mon.sh
 
 chmod +x /root/mon.sh
 
-tar -xzvf qli-Client-2.1.1-Linux-x64.tar.gz
-tar -xzvf apoolminer_linux_v1.9.3.tar
+tar -xzvf qli-Client-2.2.1-Linux-x64.tar.gz
+tar -xzvf apoolminer_linux_v2.1.1.tar
 tar -xzvf lolMiner_v1.88_Lin64.tar.gz
-tar -xzvf rigel-1.18.1-linux.tar.gz
+tar -xzvf rigel-1.19.0-linux.tar.gz
 
 mkdir qcpu
 cp qli-Client /root/qcpu/
