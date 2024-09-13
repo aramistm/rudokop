@@ -20,7 +20,45 @@ tar -xzvf rigel-1.19.0-linux.tar.gz
 mkdir qcpu
 cp qli-Client /root/qcpu/
 
-echo "{\"Settings\":{\"baseUrl\": \"https://mine.qubic.li/\",\"amountOfThreads\": 54,\"alias\": \"$1\",\"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNDMzMjgyMCwiZXhwIjoxNzU1ODY4ODIwLCJpYXQiOjE3MjQzMzI4MjAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.eu8nMWTWVJfywr45W46bHbMABpFakTPRgmjQUezTIlIH8SEvyRKf_9IQv_P9TQPtZsyUJOvIL1L23gCXvTiI87V_XNEamFY1_HqftkRVkjuPKgjPlVcmk1u4ChUAJp-tIMvsuTJ9QBj7MA2VAv0rfpXSWHNolXPQiwEV-8uWIMmQNhgLEWMYbhz0tVVd1-fqHg3UK4vCtkC7RFoIoD3nuU5Ey9LABp7wJZOxcEMe21JwtEPyW0Q9lzQBtcYhumV2EjFankYIjoBOeDMtI-8u-xx7ywA2OVHEVUkPGhAp_3tTRMy1G-VXMDJsESOxhVil9TkY7i1KpH_ePSCNBhOH-Q\", \"autoupdateEnabled\": true, \"trainer\": { \"gpu\": true, \"gpuVersion\": \"CUDA12\" }}}" > appsettings.json
+echo "{
+  \"Settings\": {
+    \"baseUrl\": \"https://wps.qubic.li\",
+    \"alias\": \"$1\",
+    \"trainer\": {
+      \"cpu\": false,
+      \"gpu\": true,
+      \"gpuVersion\": \"CUDA12\",
+      \"cpuVersion\": \"\",
+      \"cpuThreads\": 10
+    },
+    \"isPps\": true,
+    \"useLiveConnection\": true,
+    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
+    \"idleSettings\": {
+      \"command\": \"/root/rigel-1.19.0-linux/rigel\",
+      \"arguments\": \"-a fishhash+pyrinhashv2+zil -o [1]stratum+tcp://de.ironfish.herominers.com:1145 -u [1]c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458 -o [2]stratum+tcp://de.pyrin.herominers.com:1177 -u [2]pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w 27422 --log-file logs/miner.log\"
+    }
+  }
+}" > appsettings.json
+
+
+echo "{
+  \"Settings\": {
+    \"baseUrl\": \"https://wps.qubic.li\",
+    \"alias\": \"$1_CPU\",
+    \"trainer\": {
+      \"cpu\": true,
+      \"gpu\": false,
+      \"gpuVersion\": \"CUDA12\",
+      \"cpuVersion\": \"\",
+      \"cpuThreads\": 32
+    },
+    \"isPps\": true,
+    \"useLiveConnection\": true,
+    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
+    \"idleSettings\": true
+  }
+}" > appsettings.json
 
 echo "{\"Settings\":{\"baseUrl\": \"https://mine.qubic.li/\",\"amountOfThreads\": 24,\"alias\": \"$1_CPU\",\"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNDMzMjgyMCwiZXhwIjoxNzU1ODY4ODIwLCJpYXQiOjE3MjQzMzI4MjAsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.eu8nMWTWVJfywr45W46bHbMABpFakTPRgmjQUezTIlIH8SEvyRKf_9IQv_P9TQPtZsyUJOvIL1L23gCXvTiI87V_XNEamFY1_HqftkRVkjuPKgjPlVcmk1u4ChUAJp-tIMvsuTJ9QBj7MA2VAv0rfpXSWHNolXPQiwEV-8uWIMmQNhgLEWMYbhz0tVVd1-fqHg3UK4vCtkC7RFoIoD3nuU5Ey9LABp7wJZOxcEMe21JwtEPyW0Q9lzQBtcYhumV2EjFankYIjoBOeDMtI-8u-xx7ywA2OVHEVUkPGhAp_3tTRMy1G-VXMDJsESOxhVil9TkY7i1KpH_ePSCNBhOH-Q\", \"autoupdateEnabled\": true}}" > /root/qcpu/appsettings.json
 
@@ -33,10 +71,10 @@ echo "#/root/1.88/lolMiner -a FISHHASH --pool de.ironfish.herominers.com:1145 --
 echo "#/root/1.88/lolMiner -a FISHHASH --pool de.ironfish.herominers.com:1145 --user c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458.$1 --dualmode TONDUAL --dualpool ton.hashrate.to:4002 --dualuser UQDPEUpB98MhV0LMIPGTix5zavzuwrcR5wkrNcHuhDG0LEE3.$1" >> /root/mine.sh
 echo "#/root/1.88/lolMiner -a FISHHASH --pool de.ironfish.herominers.com:1145 --user c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458.$1 --dualmode TONDUAL --dualpool stratum+tcp://stratum.hyperpool.pro:8040 --ton-mode 6 --dualuser eaf89db7108470dc3f6b23eac30358114f56f89c99b0f98913256c3ccf752a3bf46bab7457" >> /root/mine.sh
 echo "#Rigel" >> /root/mine.sh
-echo "#/root/rigel-1.18.1-linux/rigel -a fishhash+sha256ton+zil -o [1]stratum+tcp://de.ironfish.herominers.com:1145 -u [1]c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458 -o [2]stratum+tcp://stratum.hyperpool.pro:8040 -u [2]eaf89db7108470dc3f6b23eac30358114f56f89c99b0f98913256c3ccf752a3bf46bab7457 -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
-echo "#/root/rigel-1.18.1-linux/rigel -a fishhash+pyrinhash+zil -o [1]stratum+tcp://de.ironfish.herominers.com:1145 -u [1]c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458 -o [2]stratum+tcp://de.pyrin.herominers.com:1177 -u [2]pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
+echo "#/root/rigel-1.19.0-linux/rigel -a fishhash+sha256ton+zil -o [1]stratum+tcp://de.ironfish.herominers.com:1145 -u [1]c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458 -o [2]stratum+tcp://stratum.hyperpool.pro:8040 -u [2]eaf89db7108470dc3f6b23eac30358114f56f89c99b0f98913256c3ccf752a3bf46bab7457 -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
+echo "#/root/rigel-1.19.0-linux/rigel -a fishhash+pyrinhash+zil -o [1]stratum+tcp://de.ironfish.herominers.com:1145 -u [1]c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458 -o [2]stratum+tcp://de.pyrin.herominers.com:1177 -u [2]pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
 echo "#xelis" >> /root/mine.sh
-echo "#/root/rigel-1.18.1-linux/rigel -a xelishashv2+zil -o [1]stratum+ssl://de.xelis.herominers.com:1225 -u [1]xel:qcd39a5u8cscztamjuyr7hdj6hh2wh9nrmhp86ljx2sz6t99ndjqzqq9qqqqq9x07lx8x7f2c57 -o [2]stratum+tcp://eu.zil.k1pool.com:1111 -u [2]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn --zil-countdown -w $1 --api-bind 127.0.0.1:5000" >> /root/mine.sh
+echo "#/root/rigel-1.19.0-linux/rigel -a xelishashv2+zil -o [1]stratum+ssl://de.xelis.herominers.com:1225 -u [1]xel:qcd39a5u8cscztamjuyr7hdj6hh2wh9nrmhp86ljx2sz6t99ndjqzqq9qqqqq9x07lx8x7f2c57 -o [2]stratum+tcp://eu.zil.k1pool.com:1111 -u [2]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn --zil-countdown -w $1 --api-bind 127.0.0.1:5000" >> /root/mine.sh
 echo "#Qubic" >> /root/mine.sh
 echo "#./apoolminer --account CP_rj3oka7lo3 --cpu-off --pool qubic1.hk.apool.io:3334 --mode 1 --worker $1" >> /root/mine.sh
 echo "screen -dmS mining-cpu bash -c 'cd /root/qcpu && ./qli-Client'" >> /root/mine.sh
