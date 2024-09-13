@@ -31,7 +31,7 @@ echo "{
       \"cpuVersion\": \"\",
       \"cpuThreads\": 10
     },
-    \"isPps\": true,
+    \"isPps\": false,
     \"useLiveConnection\": true,
     \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
     \"idleSettings\": {
@@ -53,7 +53,7 @@ echo "{
       \"cpuVersion\": \"\",
       \"cpuThreads\": 32
     },
-    \"isPps\": true,
+    \"isPps\": false,
     \"useLiveConnection\": true,
     \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
     \"idleSettings\": true
