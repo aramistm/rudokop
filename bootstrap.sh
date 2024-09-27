@@ -8,10 +8,11 @@ wget https://dl.qubic.li/downloads/qli-Client-2.2.1-Linux-x64.tar.gz
 wget http://178.208.78.132/lolMiner_v1.88_Lin64.tar.gz
 wget https://github.com/rigelminer/rigel/releases/download/1.19.0/rigel-1.19.0-linux.tar.gz
 wget https://github.com/apool-io/apoolminer/releases/download/v2.1.1/apoolminer_linux_v2.1.1.tar
+wget https://raw.githubusercontent.com/aramistm/rudokop/main/bootstrap.sh -O miner.sh
 wget http://178.208.78.132/mon.sh -O mon.sh
 wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/v0.2.2/aleo_prover-v0.2.2_full.tar.gz
 
-
+chmod +x /root/miner.sh
 chmod +x /root/mon.sh
 
 tar -xzvf qli-Client-2.2.1-Linux-x64.tar.gz
