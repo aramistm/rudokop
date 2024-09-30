@@ -38,7 +38,7 @@ echo "{
     \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjVjOTQwZTI2LTQ0MGEtNDYyZC04Y2UwLTk1ZWU4ODcwZGQ0YSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjgzMDgyOSwiZXhwIjoxNzU4MzY2ODI5LCJpYXQiOjE3MjY4MzA4MjksImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.Y7g_XS6j_XHX8QxbOtwcubvycEz0X_XnWzdtrVdWNA0x4Hx90x5wZ1u1-Va8PI3UjuYefGXlPPgijnrX6pktA32Q51LRa5dD4tq2wAtQxp3m0dpTI2oqCQjfaHna4RkMJtnssGw9neniFiJnRBFEDk7AgEMeaOf8PDVUGC0VBC0OvsUmqilQh-lR3XFSC3gN7Q3olXXB_WsYj46uwSBqa9wUqA1H2rTh_UcU3tNAxmj77S-X42uD61M6c1-wNg1cwTjVDkF93FlXfdwnH7O0dE_LaiQZzbao30uYb1Fur_M9D_DFQZpMkEEEVlzU5odKsb5aBMIbQlmzIcovh8Gg6w\",
     \"idleSettings\": {
       \"command\": \"/root/aleo_prover/aleo_prover\",
-      \"arguments\": \"--pool aleo.hk.zk.work:10003 --address aleo1p9gch6lq7f7wetnre5g649dj5uyrfup8mt9ewv5svddtfgavzvpqtdl7rd --custom_name $1\"
+      \"arguments\": \"--pool aleo.asia1.zk.work:10003 --pool aleo.hk.zk.work:10003 --pool aleo.jp.zk.work:10003 --address aleo1p9gch6lq7f7wetnre5g649dj5uyrfup8mt9ewv5svddtfgavzvpqtdl7rd --custom_name $1\"
     }
   }
 }" > appsettings.json
