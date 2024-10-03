@@ -36,8 +36,7 @@ echo "{
     \"isPps\": false,
     \"useLiveConnection\": true,
     \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
-#    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjVjOTQwZTI2LTQ0MGEtNDYyZC04Y2UwLTk1ZWU4ODcwZGQ0YSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjgzMDgyOSwiZXhwIjoxNzU4MzY2ODI5LCJpYXQiOjE3MjY4MzA4MjksImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.Y7g_XS6j_XHX8QxbOtwcubvycEz0X_XnWzdtrVdWNA0x4Hx90x5wZ1u1-Va8PI3UjuYefGXlPPgijnrX6pktA32Q51LRa5dD4tq2wAtQxp3m0dpTI2oqCQjfaHna4RkMJtnssGw9neniFiJnRBFEDk7AgEMeaOf8PDVUGC0VBC0OvsUmqilQh-lR3XFSC3gN7Q3olXXB_WsYj46uwSBqa9wUqA1H2rTh_UcU3tNAxmj77S-X42uD61M6c1-wNg1cwTjVDkF93FlXfdwnH7O0dE_LaiQZzbao30uYb1Fur_M9D_DFQZpMkEEEVlzU5odKsb5aBMIbQlmzIcovh8Gg6w\",
-    \"idleSettings\": {
+   \"idleSettings\": {
       \"command\": \"/root/aleo_prover/aleo_prover\",
       \"arguments\": \"--pool aleo.asia1.zk.work:10003 --pool aleo.hk.zk.work:10003 --pool aleo.jp.zk.work:10003 --address aleo1p9gch6lq7f7wetnre5g649dj5uyrfup8mt9ewv5svddtfgavzvpqtdl7rd --custom_name $1\"
     }
@@ -59,8 +58,7 @@ echo "{
     \"isPps\": false,
     \"useLiveConnection\": true,
     \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
-#    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjVjOTQwZTI2LTQ0MGEtNDYyZC04Y2UwLTk1ZWU4ODcwZGQ0YSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjgzMDgyOSwiZXhwIjoxNzU4MzY2ODI5LCJpYXQiOjE3MjY4MzA4MjksImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.Y7g_XS6j_XHX8QxbOtwcubvycEz0X_XnWzdtrVdWNA0x4Hx90x5wZ1u1-Va8PI3UjuYefGXlPPgijnrX6pktA32Q51LRa5dD4tq2wAtQxp3m0dpTI2oqCQjfaHna4RkMJtnssGw9neniFiJnRBFEDk7AgEMeaOf8PDVUGC0VBC0OvsUmqilQh-lR3XFSC3gN7Q3olXXB_WsYj46uwSBqa9wUqA1H2rTh_UcU3tNAxmj77S-X42uD61M6c1-wNg1cwTjVDkF93FlXfdwnH7O0dE_LaiQZzbao30uYb1Fur_M9D_DFQZpMkEEEVlzU5odKsb5aBMIbQlmzIcovh8Gg6w\",
-   \"idleSettings\": true
+  \"idleSettings\": true
   }
 }" > /root/qcpu/appsettings.json
 
