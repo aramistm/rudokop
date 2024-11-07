@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list
 apt update -y
-apt install -y g++-11 screen nano libc6 htop curl jq
+apt install -y g++-11 screen nano libc6 htop curl
 cd ~
 
 wget https://dl.qubic.li/downloads/qli-Client-2.2.1-Linux-x64.tar.gz
@@ -9,7 +9,7 @@ wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.91/lolM
 wget https://github.com/rigelminer/rigel/releases/download/1.19.0/rigel-1.19.0-linux.tar.gz
 wget https://github.com/apool-io/apoolminer/releases/download/v2.1.1/apoolminer_linux_v2.1.1.tar
 wget https://raw.githubusercontent.com/aramistm/rudokop/main/miner.sh -O miner.sh
-wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/v0.2.3/aleo_prover-v0.2.3_full.tar.gz
+wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/cuda-v0.2.4/aleo_prover-v0.2.4_cuda_full.tar.gz
 
 chmod +x /root/miner.sh
 
@@ -17,7 +17,7 @@ tar -xzvf qli-Client-2.2.1-Linux-x64.tar.gz
 tar -xzvf apoolminer_linux_v2.1.1.tar
 tar -xzvf lolMiner_v1.91_Lin64.tar.gz
 tar -xzvf rigel-1.19.0-linux.tar.gz
-tar -xzvf aleo_prover-v0.2.3_full.tar.gz
+tar -xzvf aleo_prover-v0.2.4_cuda_full.tar.gz
 
 mkdir qcpu
 cp qli-Client /root/qcpu/
@@ -65,6 +65,9 @@ echo "{
 
 echo "#Monitoring" >> /root/mine.sh
 echo "#screen -dmS mon bash /root/mon.sh" >> /root/mine.sh
+echo "#ALEO" >> /root/mine.sh
+echo "#/root/aleo_prover/aleo_prover --pool aleo.asia1.zk.work:10003 --pool aleo.hk.zk.work:10003 --pool aleo.jp.zk.work:10003 --address aleo1p9gch6lq7f7wetnre5g649dj5uyrfup8mt9ewv5svddtfgavzvpqtdl7rd --custom_name $1" >> /root/mine.sh
+
 echo "#Lol Miner" >> /root/mine.sh
 echo "#/root/1.88/lolMiner --algo PYRIN --pool de.pyrin.herominers.com:1177 --user pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a.$1" >> /root/mine.sh
 echo "#/root/1.88/lolMiner -a FISHHASH --pool de.ironfish.herominers.com:1145 --user c9f8d6c1849abbcd164f6c72002d9ac44b9deaef70481739a29d1733915defca+107458.$1 --dualmode PYRINDUAL --dualpool de.pyrin.herominers.com:1177 --dualuser pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a.$1" >> /root/mine.sh
@@ -81,7 +84,6 @@ echo "#screen -dmS mining-cpu bash -c 'cd /root/qcpu && ./qli-Client'" >> /root/
 echo "/root/qli-Client" >> /root/mine.sh
 echo "#Octopus" >> /root/mine.sh
 echo "#/root/rigel-1.19.1-linux/rigel -a octopus+pyrinhash+zil -o [1]stratum+tcp://de.conflux.herominers.com:1170 -u [1]cfx:aajg4ygzhz88k47cwfg0cjzhu27v5sgp56510jfnyy -o [2]stratum+tcp://de.pyrin.herominers.com:1177 -u [2]pyrin:qq4mqzjm7uradurlg98nx7mwhak9y2dflh8zeuer6pe65sx4c9prqqrwelk0a -o [3]stratum+tcp://eu.zil.k1pool.com:1111 -u [3]KrHmLGJQ4fidmeS9Hn9khDHWkUddAi1L4Vn -w $1 --log-file logs/miner.log" >> /root/mine.sh
-
 
 
 echo "" >> /etc/supervisor/conf.d/supervisord.conf
