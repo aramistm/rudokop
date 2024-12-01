@@ -34,8 +34,8 @@ echo "{
       \"cpuThreads\": 10
     },
     \"pps\": false,
-    \"qubicAddress\": \"HSAOTNMZDGLVICUHUMDTWNIHTTJCKZNUZRACXYTZRCXVGRYYEGKPWVREUMSK\",
-    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
+    \"qubicAddress\": null,
+    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTczMzA2MDEwNywiZXhwIjoxNzY0NTk2MTA3LCJpYXQiOjE3MzMwNjAxMDcsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.kIK16FT4NSnTbl58C4Bw3vg0dIGaLzR2kCOyNia4DUz0457_goEpjKXluHqE1657jHSpFGYR83vjSX69eGG7KyuJ7TdJn-iOaNM0gtCXJ4RbYMCIlAlMSta1FLMzYHdAFtLVsEfXU2WEUMm2NxA54bexMCGgKO0fvapdj5ZOf5pJ0euOyp61sR4ecI49BQIArfDTChDbDFVxYqoVD8SZIa--B-MJz9BZT9tteAiyJk-fO6iWjFyKiWmw0tKm6K159vVxUwPcdLENjmEA1lG_zpA4DH0_BlmNo-HjlBzRREt-Jbn1w4bXYRXRWUd0ZsUSFSgqO4rDbna8pmS0VzxpGA\",
     \"idling\": {
       \"command\": \"/root/aleo_prover/aleo_prover\",
       \"arguments\": \"--pool aleo.asia1.zk.work:10003 --pool aleo.hk.zk.work:10003 --pool aleo.jp.zk.work:10003 --address aleo1p9gch6lq7f7wetnre5g649dj5uyrfup8mt9ewv5svddtfgavzvpqtdl7rd --custom_name $1\"
@@ -56,8 +56,8 @@ echo "{
       \"cpuThreads\": 32
     },
     \"pps\": false,
-    \"qubicAddress\": \"HSAOTNMZDGLVICUHUMDTWNIHTTJCKZNUZRACXYTZRCXVGRYYEGKPWVREUMSK\",
-    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTcyNjIzNDUwNCwiZXhwIjoxNzU3NzcwNTA0LCJpYXQiOjE3MjYyMzQ1MDQsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SIgFxJFbGr11OGtp85Kn8RZdxcfIWTAh6YSmf1unQLBbW9gvB659Rfs0juF9MsFNVaUX9KF-E3qesaU0qOEDx4s5fDekkNSM5BST2QDOdAR3qgojhuktAlB24gnwv7HPim-Nlsna1jT7xkT3qqDRa4n0ZT1lnooRXgh70prQusY37-xA72-DXY78f_XvaX50AIfit2Od8XCTERAkHi8h56H3WjkwqUiOvU7QH03jwyevuuJu4jEUPOlI76iAw6fl-w2nsZjK1F2HHZSGHIeqsMFpLdBX_84fstkNp6BozXKL2sJ1eOb_7T2UxC2_16C3HPw9nuL9GgXAyX_Q59zFPA\",
+    \"qubicAddress\": null,
+    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImFmZTQ5ZGZkLWM2YzUtNDhiNi05NDllLTVhODkyNmIyMzY4ZSIsIk1pbmluZyI6IiIsIm5iZiI6MTczMzA2MDEwNywiZXhwIjoxNzY0NTk2MTA3LCJpYXQiOjE3MzMwNjAxMDcsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.kIK16FT4NSnTbl58C4Bw3vg0dIGaLzR2kCOyNia4DUz0457_goEpjKXluHqE1657jHSpFGYR83vjSX69eGG7KyuJ7TdJn-iOaNM0gtCXJ4RbYMCIlAlMSta1FLMzYHdAFtLVsEfXU2WEUMm2NxA54bexMCGgKO0fvapdj5ZOf5pJ0euOyp61sR4ecI49BQIArfDTChDbDFVxYqoVD8SZIa--B-MJz9BZT9tteAiyJk-fO6iWjFyKiWmw0tKm6K159vVxUwPcdLENjmEA1lG_zpA4DH0_BlmNo-HjlBzRREt-Jbn1w4bXYRXRWUd0ZsUSFSgqO4rDbna8pmS0VzxpGA\",
   \"idleSettings\": true
   }
 }" > /root/qcpu/appsettings.json
