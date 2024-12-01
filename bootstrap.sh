@@ -4,20 +4,20 @@ apt update -y
 apt install -y g++-11 screen nano libc6 htop curl
 cd ~
 
-wget https://dl.qubic.li/downloads/qli-Client-2.2.1-Linux-x64.tar.gz
+wget https://dl.qubic.li/downloads/qli-Client-3.1.1-Linux-x64.tar.gz
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.91/lolMiner_v1.91_Lin64.tar.gz
 wget https://github.com/rigelminer/rigel/releases/download/1.19.0/rigel-1.19.0-linux.tar.gz
 wget https://github.com/apool-io/apoolminer/releases/download/v2.1.1/apoolminer_linux_v2.1.1.tar
 wget https://raw.githubusercontent.com/aramistm/rudokop/main/miner.sh -O miner.sh
-wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/cuda-v0.2.4/aleo_prover-v0.2.4_cuda_full.tar.gz
+wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/cuda-v0.2.5-hotfix2/aleo_prover-v0.2.5_cuda_full_hotfix2.tar.gz
 
 chmod +x /root/miner.sh
 
-tar -xzvf qli-Client-2.2.1-Linux-x64.tar.gz
+tar -xzvf qli-Client-3.1.1-Linux-x64.tar.gz
 tar -xzvf apoolminer_linux_v2.1.1.tar
 tar -xzvf lolMiner_v1.91_Lin64.tar.gz
 tar -xzvf rigel-1.19.0-linux.tar.gz
-tar -xzvf aleo_prover-v0.2.4_cuda_full.tar.gz
+tar -xzvf aleo_prover-v0.2.5_cuda_full_hotfix2.tar.gz
 
 mkdir qcpu
 cp qli-Client /root/qcpu/
