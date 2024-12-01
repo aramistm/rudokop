@@ -24,7 +24,7 @@ cp qli-Client /root/qcpu/
 
 echo "{
   \"ClientSettings\": {
-    \"poolAddress\": \"wss://wps.qubic.li/wsi\",
+    \"poolAddress\": \"wss://wps.qubic.li/ws\",
     \"alias\": \"$1\",
     \"trainer\": {
       \"cpu\": false,
