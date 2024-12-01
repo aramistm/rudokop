@@ -27,11 +27,11 @@ echo "{
     \"poolAddress\": \"wss://wps.qubic.li/ws\",
     \"alias\": \"$1\",
     \"trainer\": {
-      \"cpu\": true,
+      \"cpu\": false,
       \"gpu\": true,
       \"gpuVersion\": \"CUDA\",
       \"cpuVersion\": \"\",
-      \"cpuThreads\": 10
+      \"cpuThreads\": 32
     },
     \"pps\": false,
     \"qubicAddress\": null,
