@@ -27,7 +27,7 @@ echo "{
     \"poolAddress\": \"wss://wps.qubic.li/ws\",
     \"alias\": \"$1\",
     \"trainer\": {
-      \"cpu\": false,
+      \"cpu\": true,
       \"gpu\": true,
       \"gpuVersion\": \"CUDA\",
       \"cpuVersion\": \"\",
@@ -46,8 +46,8 @@ echo "{
 
 echo "{
   \"ClientSettings\": {
-    \"baseUrl\": \"wss://wps.qubic.li/ws\",
-    \"poolAddress\": \"$1_CPU\",
+    \"poolAddress\": \"wss://wps.qubic.li/ws\",
+    \"alias\": \"$1_CPU\",
     \"trainer\": {
       \"cpu\": true,
       \"gpu\": false,
